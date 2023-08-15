@@ -14,6 +14,7 @@ func OpenConnection() (*sql.DB, error) {
 	stringConnection := fmt.Sprintf("host=%s port=%s user=%s password=%s dbname=%s sslmode=disabled", conf.Host, conf.Port, conf.User, conf.Pass, conf.Database)
 
 	connection, err := sql.Open("postgres", stringConnection)
+
 	if err != nil {
 		panic(err)
 	}
