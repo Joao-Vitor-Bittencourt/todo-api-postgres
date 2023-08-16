@@ -2,7 +2,7 @@ package models
 
 import "pratica.com/api-postgresql/db"
 
-func DElete(id int64, todo Todo) (int64, error) {
+func Delete(id int64, todo Todo) (int64, error) {
 	connection, err := db.OpenConnection()
 
 	if err != nil {
