@@ -2,7 +2,7 @@ package models
 
 import "pratica.com/api-postgresql/db"
 
-func GetAll(id int64) (todos []Todo, err error) {
+func GetAll() (todos []Todo, err error) {
 	connection, err := db.OpenConnection()
 
 	if err != nil {
